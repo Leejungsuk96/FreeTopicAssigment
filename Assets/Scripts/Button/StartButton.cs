@@ -17,14 +17,11 @@ public class StartButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        OnClickStartButton();
+        
     }
 
     public void OnClickStartButton()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            SceneManager.LoadScene("PlayScene");
-        }
+    {               
+            SceneManager.LoadScene("PlayScene");        
     }
 }
