@@ -201,6 +201,8 @@ GameObject:
   - component: {fileID: 288972944}
   - component: {fileID: 288972946}
   - component: {fileID: 288972947}
+  - component: {fileID: 288972948}
+  - component: {fileID: 288972949}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -366,6 +368,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.2}
   m_EdgeRadius: 0
+--- !u!114 &288972948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288972940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c8c6f41000fd447acde8ef59fd74b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpawnPosition: {fileID: 184184324}
+  testBullet: {fileID: 4033576544653282456, guid: d76871899cba2914489274ad33c7ccd0, type: 3}
+--- !u!114 &288972949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288972940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e0505a8215c6d4285d11dfd607aec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseStats:
+    statsChangeType: 2
+    maxHelth: 10
+    Speed: 5
+    attackSO: {fileID: 11400000, guid: 9e1baf7ceb7a84c4cb5428cf557facab, type: 2}
+  statsModifiers: []
 --- !u!1 &494837484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,21 +2195,21 @@ Tilemap:
       e33: 1
   - m_RefCount: 0
     m_Data:
-      e00: 6.0632905e-16
-      e01: NaN
-      e02: -0.00946638
+      e00: -0.025233895
+      e01: 3.1e-44
+      e02: 3.9224436e-22
       e03: 0
-      e10: 1.04e-43
-      e11: 2.1e-44
+      e10: 2e-44
+      e11: NaN
       e12: 4.5904e-41
       e13: 0
-      e20: NaN
+      e20: 3.5924e-41
       e21: 0
-      e22: 6.063282e-16
+      e22: -0.025233865
       e23: 0
       e30: 0
       e31: 7.34684e-40
-      e32: 1.04e-43
+      e32: 2e-44
       e33: 1
   - m_RefCount: 132
     m_Data:
@@ -2202,7 +2236,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 0, g: 0.12997723, b: 1, a: 1}
   m_Origin: {x: -17, y: -17, z: 0}
-  m_Size: {x: 34, y: 34, z: 1}
+  m_Size: {x: 44, y: 34, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -2380,7 +2414,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 3e652a597824bd44d91fd93f87e3857d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

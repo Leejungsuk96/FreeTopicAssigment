@@ -24,13 +24,13 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "FIre",
-                    "type": "Button",
+                    "name": "Fire",
+                    "type": "Value",
                     "id": "f42c442a-22ad-4a65-9612-67d457ea4936",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Knife",
@@ -116,7 +116,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "FIre",
+                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

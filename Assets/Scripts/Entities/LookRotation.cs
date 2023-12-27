@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class LookRotation : MonoBehaviour
 {
     private CharacterController _controller;
     [SerializeField] private SpriteRenderer _playerRenderer;
