@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7046419604601816397}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4018553058141232864}
   - component: {fileID: 67174370567551848}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,8 @@ GameObject:
   - component: {fileID: 2939646860763079676}
   - component: {fileID: 3253917860249930576}
   - component: {fileID: -7841412945557995566}
-  m_Layer: 0
+  - component: {fileID: -5487423597736738128}
+  m_Layer: 7
   m_Name: RangeEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStats:
     statsChangeType: 0
-    maxHealth: 0
+    maxHealth: 20
     Speed: 2
     Level: 0
     Gold: 10
@@ -328,6 +329,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthChangeDelay: 0.5
+--- !u!114 &-5487423597736738128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8141041536541085091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb0ebca8646f57c43abf5a2a38d1842f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8552183281965918240
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +352,7 @@ GameObject:
   - component: {fileID: 9150997703089257712}
   - component: {fileID: 3668898136149478565}
   - component: {fileID: 7272170590288333636}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8807742054697059633}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WeaponPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

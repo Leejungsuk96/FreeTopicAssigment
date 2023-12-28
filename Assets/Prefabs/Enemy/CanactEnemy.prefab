@@ -16,7 +16,8 @@ GameObject:
   - component: {fileID: 4197242688449051599}
   - component: {fileID: 5844291422409453269}
   - component: {fileID: -6321322081183820120}
-  m_Layer: 0
+  - component: {fileID: -1042087823934326215}
+  m_Layer: 7
   m_Name: CanactEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStats:
     statsChangeType: 2
-    maxHealth: 0
+    maxHealth: 10
     Speed: 2
     Level: 0
     Gold: 5
@@ -183,6 +184,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthChangeDelay: 0.5
+--- !u!114 &-1042087823934326215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3203985464204665404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb0ebca8646f57c43abf5a2a38d1842f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7902574866738233614
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +207,7 @@ GameObject:
   - component: {fileID: 6023492176957642673}
   - component: {fileID: 6650389283086755706}
   - component: {fileID: 158087521464570454}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MainSPrite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
