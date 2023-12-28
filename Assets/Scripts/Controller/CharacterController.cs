@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEditor;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class CharacterController : MonoBehaviour
 {
     public event Action<Vector2> OnMoveEvent;
     public event Action<Vector2> OnLookEvent;
-    public event Action OnShootingEvent;
+    public event Action<AttackSO> OnShootingEvent;
 
     private float LastAttackTime = float.MaxValue;
     protected bool IsAttacking { get; set; }
@@ -46,7 +47,7 @@ public class CharacterController : MonoBehaviour
         if (IsAttacking && LastAttackTime > _stats.CurrentStates.attackSO.delay)
         {
             LastAttackTime = 0;
-            CallShootingEvent();
+            CallShootingEvent(_stats.CurrentStates.attackSO);
             
         }
         
@@ -62,8 +63,8 @@ public class CharacterController : MonoBehaviour
         OnLookEvent?.Invoke(value);
     }
 
-    public void CallShootingEvent()
+    public void CallShootingEvent(AttackSO attackSO)
     {
-        OnShootingEvent?.Invoke();
+        OnShootingEvent?.Invoke(attackSO);
     }
 }

@@ -16,6 +16,8 @@ public class CharacterStats
     public StatChangeType statsChangeType;
     public int maxHelth;
     public float Speed;
+    public int Level;
+    public int Gold;
 
     // 공격 데이터
     public AttackSO attackSO;
