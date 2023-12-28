@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8630457396819911081}
   - component: {fileID: 4197242688449051599}
   - component: {fileID: 5844291422409453269}
+  - component: {fileID: -6321322081183820120}
   m_Layer: 0
   m_Name: CanactEnemy
   m_TagString: Untagged
@@ -124,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStats:
     statsChangeType: 2
-    maxHelth: 5
+    maxHealth: 0
     Speed: 2
     Level: 0
     Gold: 5
@@ -169,6 +170,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df158a921db8154e97df6e50a6fd1f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6321322081183820120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3203985464204665404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cffde9928e9a314e880f9376ab7338d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthChangeDelay: 0.5
 --- !u!1 &7902574866738233614
 GameObject:
   m_ObjectHideFlags: 0

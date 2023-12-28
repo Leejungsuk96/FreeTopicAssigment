@@ -14,7 +14,7 @@ public enum StatChangeType
 public class CharacterStats
 {
     public StatChangeType statsChangeType;
-    public int maxHelth;
+    public int maxHealth;
     public float Speed;
     public int Level;
     public int Gold;

@@ -33,21 +33,21 @@ public class CharacterController : MonoBehaviour
 
     private void HandleAttackDely()
     {
-        if (_stats.CurrentStates.attackSO == null)
+        if (_stats.CurrentStats.attackSO == null)
         {
             return;
         }
 
-        if (LastAttackTime <= _stats.CurrentStates.attackSO.delay)
+        if (LastAttackTime <= _stats.CurrentStats.attackSO.delay)
         {
             LastAttackTime += Time.deltaTime;
             
         }
 
-        if (IsAttacking && LastAttackTime > _stats.CurrentStates.attackSO.delay)
+        if (IsAttacking && LastAttackTime > _stats.CurrentStats.attackSO.delay)
         {
             LastAttackTime = 0;
-            CallShootingEvent(_stats.CurrentStates.attackSO);
+            CallShootingEvent(_stats.CurrentStats.attackSO);
             
         }
         
