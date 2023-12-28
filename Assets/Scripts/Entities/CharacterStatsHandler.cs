@@ -24,6 +24,17 @@ public class CharacterStatsHandler : MonoBehaviour
     {
         UpdateCharacterStats();
     }
+    public void AddStatModifier(CharacterStats statModifier)
+    {
+        statsModifiers.Add(statModifier);
+        UpdateCharacterStats();
+    }
+
+    public void RemoveStatModifier(CharacterStats statModifier)
+    {
+        statsModifiers.Remove(statModifier);
+        UpdateCharacterStats();
+    }
 
     private void UpdateCharacterStats()
     {

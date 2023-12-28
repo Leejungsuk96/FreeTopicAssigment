@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupHeal : MonoBehaviour
+public class PickupHeal : PickupItem
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] int healValue = 10;
+    private HealthSystem _healthSystem;
+
+    protected override void OnPickedUp(GameObject receiver)
     {
-        
+        _healthSystem = receiver.GetComponent<HealthSystem>();
+        _healthSystem.ChangeHealth(healValue);
     }
 }

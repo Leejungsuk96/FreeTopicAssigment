@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupStatModifiers : MonoBehaviour
+public class PickupStatModifiers : PickupItem
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private List<CharacterStats> statsModifier;
+    protected override void OnPickedUp(GameObject receiver)
     {
-        
+        CharacterStatsHandler statsHandler = receiver.GetComponent<CharacterStatsHandler>();
+        foreach (CharacterStats stat in statsModifier)
+        {
+            statsHandler.AddStatModifier(stat);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }
